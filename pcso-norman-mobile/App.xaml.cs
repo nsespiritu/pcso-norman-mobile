@@ -1,4 +1,7 @@
-﻿namespace pcso_norman_mobile;
+﻿using pcso_norman_mobile.View;
+
+
+namespace pcso_norman_mobile;
 
 public partial class App : Application
 {
@@ -7,5 +10,7 @@ public partial class App : Application
 		InitializeComponent();
 
 		MainPage = new AppShell();
+		Shell.Current.GoToAsync("//Login");
 	}
+
 }
